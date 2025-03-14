@@ -22,6 +22,12 @@ O **navegador** permite acessar páginas da web e gerenciar abas.
 - `addNewTab()`: Abre uma nova aba no navegador.  
 - `refreshPage()`: Atualiza a página atual.  
 
+### Iphone (`Iphone`)  
+O **Iphone** implementa os métodos do MusicPlayer, Phone e WebBrowser além de conter sua lógica
+- `playerMusic(int select, String music)`: lógica para usar o MusicPlayer.
+- `userPhone(int select, String ligar)`: lógica para usar o Phone.  
+- `Browser(int select, String pagina)`: lógica para usar o WebBrowser.  
+
 ---
 
 ## 🛠 Modelagem UML  
@@ -51,6 +57,9 @@ direction TB
     }
 
     class Iphone {
+        +playerMusic(int select, String music)
+        +userPhone(int select, String ligar)
+        +Browser(int select, String pagina)
     }
 
     <<Interface>> MusicPlayer
